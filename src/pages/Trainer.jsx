@@ -71,6 +71,7 @@ export default function Trainer() {
       minTrackingConfidence: 0.5
     });
     pose.onResults(onResults);
+    console.log(pose.onResults())
 
     if (
       typeof webcamRef.current !== "undefined" &&
