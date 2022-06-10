@@ -1,12 +1,9 @@
-import { FaceMesh } from "@mediapipe/face_mesh";
 import React, { useRef, useEffect } from "react";
 import { Pose } from "@mediapipe/pose";
-import { Hands } from "@mediapipe/hands";
 import { POSE_LANDMARKS_LEFT, POSE_LANDMARKS_RIGHT, POSE_LANDMARKS_NEUTRAL} from "@mediapipe/pose";
-import { HAND_CONNECTIONS } from "@mediapipe/hands";
 import * as cam from "@mediapipe/camera_utils";
 import "@mediapipe/control_utils";
-import {drawLandmarks, drawConnectors} from "@mediapipe/drawing_utils";
+import {drawLandmarks} from "@mediapipe/drawing_utils";
 import Webcam from "react-webcam";
 
 
@@ -18,7 +15,6 @@ export default function Trainer() {
 
   function onResults(results) {
     console.log(results)
-    // const video = webcamRef.current.video;
     const videoWidth = webcamRef.current.video.videoWidth;
     const videoHeight = webcamRef.current.video.videoHeight;
 

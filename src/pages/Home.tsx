@@ -1,10 +1,9 @@
-import {IonButton, IonContent, IonHeader, IonPage, IonTitle, IonToolbar} from '@ionic/react';
+import {IonButton, IonContent} from '@ionic/react';
 import './App.css';
-import {NavLink, useHistory} from 'react-router-dom';
-import { useEffect, useState } from 'react';
-//REDUX
-import { useSelector, useDispatch } from 'react-redux'
-//in tests
+import {NavLink} from 'react-router-dom';
+// import { useEffect, useState } from 'react';
+// //REDUX
+// import { useSelector, useDispatch } from 'react-redux'
 
 
 const Home: React.FC = () => {
