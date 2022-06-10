@@ -38,6 +38,7 @@ export default function Trainer() {
       canvasElement.height
     );
 
+
     if (results.poseLandmarks) {
       drawLandmarks(
         canvasCtx,

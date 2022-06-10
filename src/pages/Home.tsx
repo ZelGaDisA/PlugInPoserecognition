@@ -4,6 +4,7 @@ import {NavLink, useHistory} from 'react-router-dom';
 import { useEffect, useState } from 'react';
 //REDUX
 import { useSelector, useDispatch } from 'react-redux'
+//in tests
 
 
 const Home: React.FC = () => {
