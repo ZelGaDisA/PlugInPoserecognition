@@ -41,7 +41,7 @@ video{
 .buttonBox{
     width: 100vw;
     height: 100vh;
-    display: flex;
+    display: flex-box;
     position: relative;
     justify-content: center;
     align-items: center;
