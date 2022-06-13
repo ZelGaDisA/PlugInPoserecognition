@@ -7,7 +7,7 @@
     --background: rgb(187, 187, 187);
 }
 
-.button {
+.menuButton {
     --background:rgb(255, 196, 0);
     width: 500px;
     height: 200px;
@@ -30,9 +30,63 @@
 .draw{
     position: absolute;
     width: 100vw;
+    transform:  scaleX(-1);
     /* height: calc(100vw / 1.333333333); */
 }
 
 video{
     display: none;
+}
+
+.buttonBox{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.exercise-1,.exercise-2,.exercise-3,.exercise-4{
+    --background:rgb(255, 196, 0);
+    height: 200px;
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+}
+
+.settings{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    width: 300px;
+    height: 25px;
+    color:white;
+    font-family: monospace;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.angles{
+    font-size: 20px;
+}
+
+.svgBox{
+    position: absolute;
+    top: calc(50% - 50vw / 1.333333333);
+    left: 0;
+    width: 100vw;
+    height: calc(100vw / 1.333333333);
+    /* background-color: rgba(100,100,0,0.2); */
+}
+
+.svg{
+    width: 100%;
+    height: 100%;
+}
+
+.angle{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
